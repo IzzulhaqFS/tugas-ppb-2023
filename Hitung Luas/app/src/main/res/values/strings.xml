@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HitungLuas</string>
+    <string name="length">Panjang</string>
+    <string name="length_hint">0</string>
+    <string name="Width">Lebar</string>
+    <string name="calculate">Hitung</string>
+</resources>
