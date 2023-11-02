@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_nama_pembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_pembeli"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_nama_pembeli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/nama_pembeli"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama_pembeli"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_barang"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_nama_pembeli" />
+
+        <EditText
+            android:id="@+id/edt_nama_barang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/nama_barang"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama_barang"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_jumlah_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jumlah_barang"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_nama_barang" />
+
+        <EditText
+            android:id="@+id/edt_jumlah_barang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/hint_jumlah_barang"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_jumlah_barang"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harga"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_jumlah_barang" />
+
+        <EditText
+            android:id="@+id/edt_harga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/hint_harga"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_harga"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_bayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harga"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_harga" />
+
+        <EditText
+            android:id="@+id/edt_bayar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/hint_harga"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bayar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btn_proses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proses"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_bayar"
+            app:layout_constraintEnd_toEndOf="parent" />
+        
+        <View
+            android:id="@+id/view_line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/design_default_color_primary"
+            app:layout_constraintTop_toBottomOf="@id/btn_proses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_hasil_proses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hasil_placeholder"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_line_separator" />
+
+        <Button
+            android:id="@+id/btn_hapus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hapus_data"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@id/btn_keluar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_hasil_proses" />
+
+        <Button
+            android:id="@+id/btn_keluar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/keluar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_hapus"
+            app:layout_constraintTop_toTopOf="@id/btn_hapus" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

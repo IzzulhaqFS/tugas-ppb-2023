@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AplikasiPenjualan</string>
+    <string name="nama_pembeli">Nama Pembeli</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="jumlah_barang">Jumlah Barang</string>
+    <string name="hint_jumlah_barang">0</string>
+    <string name="hint_harga">1000000</string>
+    <string name="harga">Harga (Rp)</string>
+    <string name="proses">Proses</string>
+    <string name="hasil_placeholder">Belum ada Data yang diproses</string>
+    <string name="hapus_data">Hapus</string>
+    <string name="keluar">Keluar</string>
+</resources>
