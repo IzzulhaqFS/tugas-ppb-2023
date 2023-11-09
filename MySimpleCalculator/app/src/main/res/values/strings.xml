@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MySimpleCalculator</string>
+    <string name="bilangan_1">Bilangan 1</string>
+    <string name="number_input_hint">0.0</string>
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+    <string name="result">Hasil</string>
+    <string name="clear">Clear</string>
+</resources>
