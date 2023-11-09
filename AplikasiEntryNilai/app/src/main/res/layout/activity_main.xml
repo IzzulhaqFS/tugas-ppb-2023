@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_nrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nrp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_nrp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nrp_hint"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nrp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_mata_kuliah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mata_kuliah"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_nrp" />
+
+    <EditText
+        android:id="@+id/edt_mata_kuliah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/mata_kuliah"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mata_kuliah"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_nilai_tugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tugas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_mata_kuliah" />
+
+    <EditText
+        android:id="@+id/edt_nilai_tugas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nilai_hint"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@id/edt_nilai_kuis"
+        app:layout_constraintTop_toBottomOf="@id/tv_nilai_tugas"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_nilai_kuis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kuis"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/edt_nilai_tugas"
+        app:layout_constraintTop_toTopOf="@id/tv_nilai_tugas" />
+
+    <EditText
+        android:id="@+id/edt_nilai_kuis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nilai_hint"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nilai_kuis"
+        app:layout_constraintStart_toEndOf="@id/edt_nilai_tugas"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_nilai_ets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ets"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_nilai_kuis" />
+
+    <EditText
+        android:id="@+id/edt_nilai_ets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nilai_hint"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@id/edt_nilai_eas"
+        app:layout_constraintTop_toBottomOf="@id/tv_nilai_ets"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_nilai_eas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/edt_nilai_ets"
+        app:layout_constraintTop_toTopOf="@id/tv_nilai_ets" />
+
+    <EditText
+        android:id="@+id/edt_nilai_eas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nilai_hint"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nilai_eas"
+        app:layout_constraintStart_toEndOf="@id/edt_nilai_ets"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_rata_rata_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rata_rata"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_nilai_ets"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_rata_rata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nilai_hint"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_rata_rata_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nilai_huruf_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nilai_huruf"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_nilai_eas"
+        app:layout_constraintStart_toStartOf="@id/edt_nilai_eas" />
+
+    <TextView
+        android:id="@+id/tv_nilai_huruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nilai_huruf_hint"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_nilai_huruf_title"
+        app:layout_constraintStart_toStartOf="@id/tv_nilai_huruf_title" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/simpan"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_hapus"
+        app:layout_constraintTop_toBottomOf="@id/tv_rata_rata"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_hapus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hapus"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_simpan"
+        app:layout_constraintStart_toEndOf="@id/btn_simpan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

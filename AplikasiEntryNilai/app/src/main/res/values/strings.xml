@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AplikasiEntryNilai</string>
+    <string name="nrp">NRP</string>
+    <string name="nrp_hint">00000000000001</string>
+    <string name="mata_kuliah">Mata Kuliah</string>
+    <string name="tugas">Tugas</string>
+    <string name="nilai_hint">0.0</string>
+    <string name="kuis">Kuis</string>
+    <string name="ets">ETS</string>
+    <string name="eas">EAS</string>
+    <string name="rata_rata">Rata-rata</string>
+    <string name="nilai_huruf">Nilai (huruf)</string>
+    <string name="nilai_huruf_hint">-</string>
+    <string name="simpan">Simpan</string>
+    <string name="hapus">Hapus</string>
+</resources>
