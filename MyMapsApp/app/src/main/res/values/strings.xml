@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyMapsApp</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="zoom">Zoom</string>
+    <string name="go">Go</string>
+    <string name="normal">Normal</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="terrain">Terrain</string>
+    <string name="satellite">Satellite</string>
+    <string name="none">None</string>
+    <string name="search">Search</string>
+    <string name="lat_lng_zoom">Lat-Lng</string>
+    <string name="geocoder">Geocoder</string>
+</resources>

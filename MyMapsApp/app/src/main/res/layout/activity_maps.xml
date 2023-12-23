@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <EditText
+        android:id="@+id/edt_latitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        map:layout_constraintEnd_toStartOf="@id/edt_longitude"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/edt_longitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude"
+        android:inputType="numberDecimal|numberSigned"
+        map:layout_constraintEnd_toStartOf="@id/edt_zoom"
+        map:layout_constraintStart_toEndOf="@id/edt_latitude"
+        map:layout_constraintTop_toTopOf="@id/edt_latitude"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/edt_zoom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/zoom"
+        android:inputType="numberDecimal|numberSigned"
+        map:layout_constraintEnd_toStartOf="@id/btn_go"
+        map:layout_constraintStart_toEndOf="@id/edt_longitude"
+        map:layout_constraintTop_toTopOf="@id/edt_latitude"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        map:layout_constraintEnd_toStartOf="@id/edt_zoom"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/go"
+        android:layout_marginEnd="8dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toEndOf="@id/edt_zoom"
+        map:layout_constraintTop_toTopOf="@id/edt_latitude" />
+
+    <Button
+        android:id="@+id/btn_coordinate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lat_lng_zoom"
+        android:layout_marginTop="8dp"
+        map:layout_constraintEnd_toStartOf="@id/btn_geocoder"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/edt_latitude" />
+
+    <Button
+        android:id="@+id/btn_geocoder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/geocoder"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toEndOf="@id/btn_coordinate"
+        map:layout_constraintTop_toTopOf="@id/btn_coordinate" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/btn_coordinate"
+        tools:layout="@layout/support_simple_spinner_dropdown_item" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
