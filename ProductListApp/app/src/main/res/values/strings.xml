@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProductListApp</string>
+    <string name="title_1">Selamat Datang</string>
+    <string name="title_2">Di Theozu Store</string>
+    <string name="product_list">Daftar Produk</string>
+    <string name="add_product">Tambah Produk</string>
+    <string name="search_product">Cari Produk</string>
+    <string name="product_code">Kode Produk</string>
+    <string name="product_code_hint">0123456789123</string>
+    <string name="product_name">Nama Produk</string>
+    <string name="product_quantity">Kuantitas Produk</string>
+    <string name="product_quantity_hint">00</string>
+    <string name="product_price">Harga (Rp)</string>
+    <string name="product_price_hint">100000</string>
+    <string name="save">Simpan</string>
+    <string name="delete">Hapus</string>
+    <string name="placeholder_quantity">Stok : 10</string>
+    <string name="placeholder_price">Rp. 10000</string>
+    <string name="no_data">Tidak ada data</string>
+</resources>
