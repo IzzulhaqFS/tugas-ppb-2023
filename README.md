@@ -13,7 +13,7 @@ Kumpulan tugas untuk kelas Pemrograman Perangkat Lunak
 |List View|ProductListApp|
 |Maps|MyMapsApp|
 |Geocoder|MyMapsApp|
-|GPS| |
-|Dynamic Marker| |
+|GPS|https://github.com/IzzulhaqFS/MySimpleGPS |
+|Dynamic Marker|https://github.com/IzzulhaqFS/MySimpleGPS |
 |JSON Parser|MyGithubApp|
 |Camera|https://github.com/IzzulhaqFS/wound-identification-app|
